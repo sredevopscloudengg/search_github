@@ -46,3 +46,7 @@ please use the examples below to run the program. <br>
 #usage(with debug output) : <path_to_program>/search_github_repo_pr_by_date.sh <path_to_config>/app.config <path_to_input>/pr_states.txt <path_to_input>/pr_dates.txt 2>&1 | tee <path_to_output>/program_output.log <br>
 #example(current directory): ./search_github_repo_pr_by_date.sh app.config pr_states.txt pr_dates.txt 2>&1 | tee program_output.log <br>
 #example(different directory): /tmp/search_github_repo_pr_by_date.sh /tmp/app.config /tmp/pr_states.txt /tmp/pr_dates.txt 2>&1 | tee /tmp/program_output.log <br>
+
+# sample output
+pr_summary_report_sample.pdf contains the content sent by this program to an email address defined in the app.config file
+
