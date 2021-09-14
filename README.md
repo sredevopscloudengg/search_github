@@ -33,8 +33,19 @@ search_pr_date_range: this is a parent search function that will loop through al
 send_pr_summary_report: this function will send an email that includes PR summary report to a user's email address defined in the app.config file. <br>
 
 # instructions
-download the files to your local linux/unix environment. <br>
-install the dependencies. <br>
+
+download the following files to your local linux/unix environment. <br>
+1. search_github_repo_pr_by_date.sh
+2. app.config
+3. pr_states.txt
+4. pr_dates.txt
+
+install the following dependencies if required. <br>
+1. vi
+2. curl
+3. jq
+4. mail
+
 update app.config values for the parameters token, email with your desired values. others are optional and can be updated to suit your requirements. <br>
 changes to the input files pr_states.txt and pr_dates.txt are optional. <br>
 
