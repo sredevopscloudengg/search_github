@@ -12,7 +12,7 @@ jq: a linux utility used to process json content. <br>
 mail: a linux mail client program to send email. <br>
 ensure there is a tmp directory and you have write access to it. <br>
 
-# about the program:
+# about the program: search_github_repo_pr_by_date.sh
 main function: accepts the following files as command line arguments in the following sequence and assigns them to global variables <br>
 app.config <br>
 pr_states.txt <br>
