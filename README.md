@@ -1,18 +1,38 @@
 # description
-this project uses github search api rest endpoints to retrieve search results for pull requests based on pre-defined search criteria such as state, date type and date range. <br>
+
+this project uses github search api rest endpoints to retrieve search results for pull requests based on pre-defined search criteria such as state, date type and date range. this projects contains two different programs, one implemented in BASH and the other implemented in python with almost identical logic and identical outputs.<br>
+
+# BASH program: search_github_repo_pr_by_date.sh
+# python program: search_github_repo_pr_by_date.py
+
 
 # development environment
+
 suse linux 12-SP5 <br>
+
+program: search_github_repo_pr_by_date.sh <br>
 BASH version 4.3.48(1) - release <br>
 
+program: search_github_repo_pr_by_date.py <br>
+python 2.7 <br>
+
+
 # prerequisites/dependencies
+
+program: search_github_repo_pr_by_date.sh <br>
 vi: text editor for writing shell scripts. <br>
 curl: a linux utility used to send http requests. <br>
 jq: a linux utility used to process json content. <br>
 mail: a linux mail client program to send email. <br>
+column: a linux utility for generating output files with columns. <br>
 ensure there is a tmp directory and you have write access to it. <br>
 
-# about the program: search_github_repo_pr_by_date.sh
+program: search_github_repo_pr_by_date.py <br>
+vi: text editor for writing shell scripts. <br>
+python 2.7: python language sdk for writing python programs <br>
+
+# about the programs: search_github_repo_pr_by_date.sh, search_github_repo_pr_by_date.py
+
 main function: accepts the following files as command line arguments in the following sequence and assigns them to global variables <br>
 app.config <br>
 pr_states.txt <br>
@@ -34,6 +54,7 @@ send_pr_summary_report: this function will send an email that includes PR summar
 
 # instructions
 
+# program: search_github_repo_pr_by_date.sh <br>
 download the following files to your local linux/unix environment. <br>
 1. search_github_repo_pr_by_date.sh
 2. app.config
@@ -58,6 +79,30 @@ please use the examples below to run the program. <br>
 #example(current directory): ./search_github_repo_pr_by_date.sh app.config pr_states.txt pr_dates.txt 2>&1 | tee program_output.log <br>
 #example(different directory): /tmp/search_github_repo_pr_by_date.sh /tmp/app.config /tmp/pr_states.txt /tmp/pr_dates.txt 2>&1 | tee /tmp/program_output.log <br>
 
-# sample output
+# program: search_github_repo_pr_by_date.py <br>
+download the following files to your local linux/unix environment. <br>
+1. search_github_repo_pr_by_date.py
+2. app.config
+3. pr_states.txt
+4. pr_dates.txt
+
+install the following dependencies if required. <br>
+1. vi
+2. python 2.7
+
+1. vi
+2. curl
+
+update app.config values for the parameters token, email with your desired values. others are optional and can be updated to suit your requirements. <br>
+changes to the input files pr_states.txt and pr_dates.txt are optional. <br>
+
+please use the examples below to run the program. <br>
+#usage : python <path_to_program>/search_github_repo_pr_by_date.sh <path_to_config>/app.config <path_to_input>/pr_states.txt <path_to_input>/pr_dates.txt <br>
+#example(current directory): python search_github_repo_pr_by_date.sh app.config pr_states.txt pr_dates.txt <br>
+#example(different directory): python /tmp/search_github_repo_pr_by_date.sh /tmp/app.config /tmp/pr_states.txt /tmp/pr_dates.txt <br>
+
+# sample output: search_github_repo_pr_by_date.sh
 pr_summary_report_sample.pdf contains the content sent by this program to an email address defined in the app.config file
 
+# note: search_github_repo_pr_by_date.py
+As of this writing, the email functionality has not been implemeneted in this program.<br>
