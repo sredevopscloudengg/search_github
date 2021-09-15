@@ -90,9 +90,6 @@ install the following dependencies if required. <br>
 1. vi
 2. python 2.7
 
-1. vi
-2. curl
-
 update app.config values for the parameters token, email with your desired values. others are optional and can be updated to suit your requirements. <br>
 changes to the input files pr_states.txt and pr_dates.txt are optional. <br>
 
